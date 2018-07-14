@@ -4,10 +4,13 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import tw.mics.spigot.plugin.wodess.listener.LiquidLimitListener;
+import tw.mics.spigot.plugin.wodess.listener.NetherDoorTeleportListener;
 import tw.mics.spigot.plugin.wodess.listener.SpeedElytraLimitListener;
+import tw.mics.spigot.plugin.wodess.schedule.NetherDoorTeleport;
 
 public class WoDEss extends JavaPlugin {
     static JavaPlugin instance;
+    public NetherDoorTeleport netherdoor;
 
     @Override
     public void onEnable() {
@@ -19,6 +22,9 @@ public class WoDEss extends JavaPlugin {
         //註冊 listener
         new LiquidLimitListener(this);
         new SpeedElytraLimitListener(this);
+        new NetherDoorTeleportListener(this);
+        
+        netherdoor = new NetherDoorTeleport(this);
     }
 
     @Override
