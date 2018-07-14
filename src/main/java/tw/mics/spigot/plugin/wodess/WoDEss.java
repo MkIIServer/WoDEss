@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import tw.mics.spigot.plugin.wodess.listener.LiquidLimitListener;
 import tw.mics.spigot.plugin.wodess.listener.NetherDoorTeleportListener;
+import tw.mics.spigot.plugin.wodess.listener.ShulkerBoxLimitListener;
 import tw.mics.spigot.plugin.wodess.listener.SpeedElytraLimitListener;
 import tw.mics.spigot.plugin.wodess.schedule.NetherDoorTeleport;
 
@@ -23,6 +24,7 @@ public class WoDEss extends JavaPlugin {
         new LiquidLimitListener(this);
         new SpeedElytraLimitListener(this);
         new NetherDoorTeleportListener(this);
+        new ShulkerBoxLimitListener(this);
         
         netherdoor = new NetherDoorTeleport(this);
     }
