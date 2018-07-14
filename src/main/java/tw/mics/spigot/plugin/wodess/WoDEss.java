@@ -3,10 +3,7 @@ package tw.mics.spigot.plugin.wodess;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import tw.mics.spigot.plugin.wodess.listener.BedClickListener;
 import tw.mics.spigot.plugin.wodess.listener.LiquidLimitListener;
-import tw.mics.spigot.plugin.wodess.listener.PlayerDeathListener;
-import tw.mics.spigot.plugin.wodess.listener.PlayerRespawnListener;
 import tw.mics.spigot.plugin.wodess.listener.SpeedElytraLimitListener;
 
 public class WoDEss extends JavaPlugin {
@@ -20,9 +17,6 @@ public class WoDEss extends JavaPlugin {
         WorldSetting.runsetting();
 
         //註冊 listener
-        new BedClickListener(this);
-        new PlayerRespawnListener(this);
-        new PlayerDeathListener(this);
         new LiquidLimitListener(this);
         new SpeedElytraLimitListener(this);
     }
