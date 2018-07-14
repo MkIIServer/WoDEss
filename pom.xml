@@ -3,18 +3,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Project properties. -->
-    <groupId>tw.mics.spigot.plugin.mkess2018</groupId>
-    <artifactId>MkEss2018</artifactId>
+    <groupId>tw.mics.spigot.plugin.wodess</groupId>
+    <artifactId>WoDEss</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
-    <name>MkEss2018</name>
+    <name>WoDEss</name>
     <url>http://mics.tw</url>
-    <description>Mk.II 2018 Essential Plugin.</description>
+    <description>WoD 2018 Essential Plugin.</description>
 
     <!-- Properties -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.mainclass>tw.mics.spigot.plugin.mkess2018.MkEss</project.mainclass>
+        <project.mainclass>tw.mics.spigot.plugin.wodess.WoDEss</project.mainclass>
         <!--Use a profile to overwrite this-->
         <outputdir>${project.build.outputDirectory}</outputdir>
         <mc-version>1.12.2</mc-version>
